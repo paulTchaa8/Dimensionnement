@@ -1,6 +1,6 @@
-#Dimensionnement Panneau Solaire
+# Dimensionnement Panneau Solaire
 
-##The PROJECT
+## The PROJECT
 The goal of this small project was to make a user interface that allows an electrician to get easily the 
 technical values of the power and the energy for a given charge, e.g. iron, TV, computer, freezer ...
 However, this was a personal challenge in order to revise the skills I've acquired during the **front-end 
