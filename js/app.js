@@ -105,11 +105,11 @@ let nombreCharge;
 				
 				if( temps<0 || isNaN(temps))
 				{
-						$("#tf"+k+"").attr('style', 'border-color: rgba(191, 68, 68, 0.75)');
+						$("#tf"+k+"").toggleClass('incorrect');
 						alert('Le Temps ne peut etre NeGaTiF !');
 					
-						$("#tf"+k+"").mouseover(function(){			
-								$(this).toggleClass('incorrect');
+						$("#tf"+k+"").onmouseover(function(){			
+								$(this).attr('style', 'border-color: rgba(191, 68, 68, 0.75)');
 								
 						});
 				}else{
