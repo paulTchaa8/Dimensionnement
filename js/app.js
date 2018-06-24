@@ -66,7 +66,7 @@ let nombreCharge;
 						$("#pu"+j+"").attr('style', 'border-color: rgba(191, 68, 68, 0.75)');
 						alert('Veuillez Remplir correctement la Puissance Unitaire !');
 					
-						$("#pu"+j+"").mouseover(function(){	
+						$("#pu"+j+"").onmouseover(function(){	
 								
 								$(this).toggleClass('incorrect');
 								
@@ -79,7 +79,7 @@ let nombreCharge;
 						$("#q"+j+"").attr('style', 'border-color: rgba(191, 68, 68, 0.75)');
 						alert('Veuillez Preciser la quanTiTe !');
 					
-						$("#q"+j+"").mouseover(function(){			
+						$("#q"+j+"").onmouseover(function(){			
 							$(this).toggleClass('incorrect');
 								
 						}).focus(function(){
