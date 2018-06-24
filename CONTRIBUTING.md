@@ -10,4 +10,5 @@ the goal of this, is to be able to add dynamically line(s) as you see I did on t
   so that we'll no longer have to know about the number of charges before generating the appropriate line(s).
  
 # the INSTALL
+
  Not tough at all. Just download or clone the project, and `**THERE WE GO!**`. 
