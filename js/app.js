@@ -15,7 +15,7 @@ let nombreCharge;
 	
 	function afficheLesChamps(nombreCharge){
 				// display all the text fields here and add event listeners to elements..
-				//	let's first remove the previous elements here..
+				//	let's first remove the previous elements here....
 				
 			let buttonEnergie = $('#valeur_energie'), buttonPuiss = $('#puissance_totale');
 				buttonEnergie.siblings().remove();
