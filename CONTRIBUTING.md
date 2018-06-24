@@ -11,3 +11,7 @@ the goal of this, is to be able to add dynamically line(s) as you see I did on t
  
  ## INSTALL
  Not tough at all. Just download or clone the project, and `**THERE WE GO!**`. 
+ 
+ ## HOW TO CREATE COMMIT
+ 
+ Just to say that when creating a `topic branch`, it should start by the _elec-_ statement `elec-loop` for instance.
