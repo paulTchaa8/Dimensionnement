@@ -136,7 +136,7 @@ let nombreCharge;
 		});
 		
 		$('#annuler').click(function(){
-			// reset the app..
+			// reset the app and the mervelous slideUp() show..
 			let buttonEnergie = $('#valeur_energie'), buttonPuiss = $('#puissance_totale');
 				buttonEnergie.siblings().remove();
 				buttonPuiss.siblings().remove();
