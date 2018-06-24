@@ -131,7 +131,7 @@ let nombreCharge;
 			}
 
 			$('#message').children().remove();
-			$('#message').append('<span>Pour '+(somme>1?'les ':'') +somme+' appareil(s), l\'&eacute;nergie totale &agrave; prevoir en KWh est de:</span>');
+			$('#message').append('<span>Pour '+(somme>1?'les ':'') +somme+' appareil'+(somme>1?'s':'')+', l\'&eacute;nergie totale &agrave; prevoir en KWh est de:</span>');
 			$("#alternative").val(totalEnergie);
 		});
 		
