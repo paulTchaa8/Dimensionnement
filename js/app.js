@@ -21,6 +21,7 @@ let nombreCharge;
 				buttonEnergie.siblings().remove();
 				buttonPuiss.siblings().remove();
 				$('h3').siblings().remove();
+				$('#message').children().remove();
 				$('#alternative').val(0); 
 	
 			for(let i=1; i<=nombreCharge; i++)
@@ -39,7 +40,7 @@ let nombreCharge;
 				'<option>T&eacute;l&eacute;viseur</option><option>TV LCD</option><option>TV LED</option>'+
 				'<option>Ventilateur</option>'+
 				'</select>');
-				$('select').attr('style', 'width: 90px; height: 29px;');
+				$('select').attr('style', 'width: 90px; height: 28px;');
 				
 				$('#qte').append('<input type="number" value="0" id="q'+i+'" min="0" />');
 				
