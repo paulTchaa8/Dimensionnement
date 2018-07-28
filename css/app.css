@@ -1,5 +1,5 @@
 /**
-*	Done by Paul Frank TCHA'A NGUIAMBA, FRONT-END Development learner from "Udacity Google" -- 
+*	Done by Paul Frank TCHA'A NGUIAMBA, FRONT-END Development scholar from "Google with Udacity" -- 
 *		The << CEMAC Calculator >> Owner
 *	There we go! *** my CSS Document ***
 **/
@@ -19,7 +19,7 @@
 	border-radius:5px;
 }
 body{
-	background: url('../img/pattern.png') repeat;
+	background: url('../img/lingot.jpg') repeat; /*url('../img/pattern.png') repeat;*/
 	font: bold 102% 'News Cycle';
 }
 

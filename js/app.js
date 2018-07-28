@@ -1,5 +1,5 @@
 /**
-*	Done by Paul Frank TCHA'A NGUIAMBA, a Front-End Development learner from "Udacity Google" -- 
+*	Done by Paul Frank TCHA'A NGUIAMBA, a Front-End Development scholar from "Udacity Google" -- 
 *		the << CEMAC Calculator >> owner
 *	There we go! done with jQuery - a javascript Library
 **/
@@ -67,9 +67,11 @@ let nombreCharge;
 						$("#pu"+j+"").attr('style', 'border-color: rgba(191, 68, 68, 0.75)');
 						alert('Veuillez Remplir correctement la Puissance Unitaire !');
 					
-						$("#pu"+j+"").onmouseover(function(){	
-								
+						$("#pu"+j+"").mouseover(function(){		
 								$(this).toggleClass('incorrect');
+								
+						}).mouseleave(function(){			
+							$(this).toggleClass('incorrect', false);
 								
 						}).focus(function(){
 								$(this).css('border-color', 'rgba(191, 68, 68, 0.75)');
@@ -80,8 +82,11 @@ let nombreCharge;
 						$("#q"+j+"").attr('style', 'border-color: rgba(191, 68, 68, 0.75)');
 						alert('Veuillez Preciser la quanTiTe !');
 					
-						$("#q"+j+"").onmouseover(function(){			
+						$("#q"+j+"").mouseover(function(){			
 							$(this).toggleClass('incorrect');
+								
+						}).mouseleave(function(){			
+							$(this).toggleClass('incorrect', false);
 								
 						}).focus(function(){
 								$(this).css('border-color', 'rgba(191, 68, 68, 0.75)');
@@ -90,8 +95,8 @@ let nombreCharge;
 					}else{
 						ptotale = parseFloat(pu)*qte;
 						$("#pt"+j+"").val(ptotale); 
-						$("#pu"+j).removeAttr('style');
-						$("#q"+j).removeAttr('style');
+						$("#pu"+j).removeAttr('style').toggleClass('incorrect', false);
+						$("#q"+j).removeAttr('style').toggleClass('incorrect', false);
 					}
 			}
 		});
@@ -109,12 +114,15 @@ let nombreCharge;
 						$("#tf"+k+"").toggleClass('incorrect');
 						alert('Le Temps ne peut etre NeGaTiF !');
 					
-						$("#tf"+k+"").onmouseover(function(){			
+						$("#tf"+k+"").mouseover(function(){			
 								$(this).attr('style', 'border-color: rgba(191, 68, 68, 0.75)');
+								
+						}).mouseleave(function(){			
+							$(this).toggleClass('incorrect', false);
 								
 						});
 				}else{
-						$("#tf"+k+"").removeAttr('style');
+						$("#tf"+k+"").removeAttr('style').toggleClass('incorrect', false);
 						energie = parseFloat(pt)*temps;
 						$("#e"+k+"").val(energie);
 						
